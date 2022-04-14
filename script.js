@@ -1,5 +1,8 @@
+const sec = 00;
+
+
 function start() {
-    console.log("Iniciou");
+    setInterval(watch, 1000);
 }
 
 
@@ -13,6 +16,6 @@ function stop() {
 }
 
 
-function counter() {
-    console.log
+function watch() {
+    sec++;
 }
