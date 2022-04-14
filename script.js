@@ -18,4 +18,5 @@ function stop() {
 
 function watch() {
     sec++;
+    document.getElementById("time").innerText = sec
 }
