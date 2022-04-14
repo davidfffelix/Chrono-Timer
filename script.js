@@ -1,4 +1,4 @@
-const sec = 00;
+let sec = 00;
 
 
 function start() {
@@ -18,5 +18,5 @@ function stop() {
 
 function watch() {
     sec++;
-    document.getElementById("time").innerText = sec
+    document.getElementById("time").innerText = sec;
 }
