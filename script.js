@@ -1,5 +1,5 @@
-let sec = 0;
-let min = 0;
+let sec = 00;
+let min = 00;
 
 
 function start() {
@@ -23,5 +23,5 @@ function watch() {
         min++
         sec = 0
     }
-    document.getElementById("time").innerText = sec;
+    document.getElementById("time").innerText = min + ":" + sec;
 }
