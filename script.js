@@ -13,7 +13,10 @@ function pause() {
 
 
 function stop() {
-    console.log("Iniciou");
+    clearInterval(interval);
+    sec = 0;
+    min = 0;
+    document.getElementById("time").innerText = "00:00";
 }
 
 
