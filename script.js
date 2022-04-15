@@ -1,4 +1,5 @@
-let sec = 00;
+let sec = 0;
+let min = 0;
 
 
 function start() {
@@ -18,5 +19,9 @@ function stop() {
 
 function watch() {
     sec++;
+    if(sec==60) {
+        min++
+        sec = 0
+    }
     document.getElementById("time").innerText = sec;
 }
