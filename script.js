@@ -1,14 +1,14 @@
 let sec = 00;
 let min = 00;
-
+let interval;
 
 function start() {
-    setInterval(watch, 1000);
+    interval = setInterval(watch, 1000);
 }
 
 
 function pause() {
-    console.log("Iniciou");
+    clearInterval(interval);
 }
 
 
