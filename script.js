@@ -3,8 +3,18 @@ let min = 0;
 let hr = 0;
 let interval;
 
+
+function twoDigits(digit) {
+    if(digit < 10) {
+        return("0" + digit)
+    }else {
+        return(digit)
+    }
+}
+
+
 function start() {
-    interval = setInterval(watch, 1000);
+    interval = setInterval(watch, 1);
 }
 
 
