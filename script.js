@@ -1,5 +1,6 @@
-let sec = 00;
-let min = 00;
+let sec = 0;
+let min = 0;
+let hr = 0;
 let interval;
 
 function start() {
@@ -16,15 +17,19 @@ function stop() {
     clearInterval(interval);
     sec = 0;
     min = 0;
-    document.getElementById("time").innerText = "00:00";
+    document.getElementById("time").innerText = "00:00:00";
 }
 
 
 function watch() {
     sec++;
-    if(sec==60) {
+    if(sec == 60) {
         min++
         sec = 0
+        if(min == 60) {
+            min = 0
+            hr++
+        }
     }
-    document.getElementById("time").innerText = min + ":" + sec;
+    document.getElementById("time").innerText = hr + ":" + min + ":" + sec;
 }
