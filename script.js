@@ -14,7 +14,7 @@ function twoDigits(digit) {
 
 
 function start() {
-    interval = setInterval(watch, 1);
+    interval = setInterval(watch, 1000);
 }
 
 
@@ -41,5 +41,5 @@ function watch() {
             hr++
         }
     }
-    document.getElementById("time").innerText = hr + ":" + min + ":" + sec;
+    document.getElementById("time").innerText = twoDigits(hr) + ":" + twoDigits(min) + ":" + twoDigits(sec);
 }
