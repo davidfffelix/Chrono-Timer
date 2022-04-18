@@ -25,6 +25,7 @@ h1 {
 
 button {
     border-radius: 10px;
+    border: none;
     color: white;
     margin-top: 1em;
     height: 2em;
