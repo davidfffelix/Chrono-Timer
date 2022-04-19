@@ -1,5 +1,8 @@
-@import ("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap";
 
+:root {
+    --color-title-h1: orange;
+}
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -11,15 +14,20 @@
 
 body {
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 div {
     text-align: center;
+    
 }
 
 
 h1 {
-    color: orange;
+    color: var(--color-title-h1);
 }
 
 

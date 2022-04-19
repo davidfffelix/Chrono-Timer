@@ -1,6 +1,7 @@
 let sec = 0;
 let min = 0;
 let hr = 0;
+
 let interval;
 
 
@@ -26,8 +27,6 @@ function pause() {
 
 function stop() {
     clearInterval(interval);
-    sec = 0;
-    min = 0;
     document.getElementById("time").innerText = "00:00:00";
 }
 
