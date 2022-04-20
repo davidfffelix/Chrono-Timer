@@ -27,6 +27,8 @@ function pause() {
 
 function stop() {
     clearInterval(interval);
+    sec = 0;
+    min = 0;
     document.getElementById("time").innerText = "00:00:00";
 }
 
