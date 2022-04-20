@@ -4,6 +4,7 @@
     --color-title-h1: orange;
 }
 
+
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
@@ -20,9 +21,9 @@ body {
     min-height: 100vh;
 }
 
+
 div {
     text-align: center;
-    
 }
 
 
@@ -44,6 +45,7 @@ button {
 button:hover {
     cursor: pointer;
 }
+
 
 .start-btn {
     background-color: green;
